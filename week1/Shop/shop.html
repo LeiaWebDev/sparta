@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="styleShop.css" />
+
+    <title>SCC Shopping Mall</title>
+
+
+</script>
+<script>
+    function ordercomplete() 
+    {
+        alert ('Your order is complete!');
+    }
+
+</script>
+
+</head>
+<body>
+
+
+    <div class="maintitle">
+        <h1>We have all kinds of candles</h1>
+    </div>
+    
+
+<div class="eachcandlecard">
+    
+  <!-- Header of each card-->
+  <div class="titleheader">
+        <div class="productimage">
+        <img src="https://assets.newatlas.com/dims4/default/919d12b/2147483647/strip/true/crop/5428x3619+0+0/resize/1200x800!/quality/90/?url=http:%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2F84%2Ff3%2Fd494642c4d619798f4f3d91d9547%2Fys5a0262.JPG"
+                        class="img-fluid" alt="candel">
+        </div>
+
+        <div class="productNamePrice">
+            <div class="row">
+                <div class="col">
+                    <h3>Sparta Candles</h3>
+                </div>
+                <div class="col">
+                    <h4>Price : $3 each</h4>
+                </div>
+                              
+            </div>
+        </div>
+
+         <h4>These candles actually have special power!</h4>
+    
+    </div>
+
+
+    <!-- Block input of each card-->
+    <div class="mycandelform">
+
+        <div class="input-group">
+            <span class="input-group-text" id="inputGroup-sizing-default">Your name</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-text" id="inputGroup-sizing-default">Address</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-text" id="inputGroup-sizing-default">City</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <span class="input-group-text" id="inputGroup-sizing-default">Zip</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-text" id="inputGroup-sizing-default">Phone number</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group">
+            <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+            <select class="form-select" id="inputGroupSelect01">
+                <option selected>-- Please select quantity --</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <button onclick="ordercomplete()" type="button" class="btn btn-primary">Order</button>
+    </div>
+
+</div>
+
+</body>
+</html>
