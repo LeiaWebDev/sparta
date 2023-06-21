@@ -104,10 +104,7 @@ data: {},
 success: function(response){ 
 console.log(response)
 }
-});
-
-let temp_html = '<button>I am a new button!</button>';
-    $('#cards-box').append(temp_html);
+})
 
 </script>
 
@@ -116,6 +113,15 @@ let temp_html = '<button>I am a new button!</button>';
 </head>
 
 <body>
+    <script>
+
+let temp_html = "<button>I am a new button!</button>";
+    $('#cards-box').append(temp_html);
+
+
+    </script>
+
+
     <div class="mytitle">
         <h1>My favorite movies</h1>
         <button onclick="open_box()">Save a new movie</button>
@@ -144,7 +150,7 @@ let temp_html = '<button>I am a new button!</button>';
             <label for="floatingTextarea2">Comment</label>
         </div>
         <div class="mybtns">
-            <button onclick="open_box()"type="button" class="btn btn-dark">Save</button>
+            <button type="button" class="btn btn-dark">Save</button>
             <button onclick="close_box()"type="button" class="btn btn-outline-dark">Close</button>
         </div>
 

@@ -18,58 +18,64 @@
         function q1(){
             // 1. Receive the input value of input-q1
             let value1 = $('#input-q1').val();
-            // 2. If the input value is empty
-         // 3. Alert a message
-         //$("button").click(function(){
-        // 4. Alert the input value
+         // 3. Alert the input value as you press the button
+        // $("button").click(function q1(){
+          //  alert('Insert a value')})
+        // 4.  If the input value is empty
         if (value1 == " " ) {
                 alert ('Insert any value!');
+            } else {
+                alert(value1);
+                return;
             }
         }
-    </script>
-        
-    <script>
+
 
     function q2() {
 	          // 1. Receive the input value of input-q2
               let value2 = $('#input-q2').val();
-            // 2. If there is '@' in the input value (Hint! Try using 'includes')
-            // 3. rtanny@gmail.com -> extract 'gmail'
+            // 2. Alert the input value(email) as you press the button
+            //$("button").click(function q2(){
+           // alert('Insert an email!')});
+            
             // 4. Alert the domain value
-            // 5. Alert a message if the input value is not an email
-            if (value2 == "@" ) {
-                alert ('It is not an email!');
-            } elseif (value2==".gmail") {
-                alert("Value: " + $("#input-q2").val());
+            if (value2.includes("@")){
+                let domainWithDot = value2.split('@')[1];
+                let domainOnly = domainWithDot.split('.')[0];
+                alert ('domainOnly');
+
+            // 3. Alert "Invalid email address" if the input value doesn't have '@'
+            } else {
+                alert('Invalid email address');
+                return;
+            }
+            
             }
             
             
-    }
-    
-    </script>
-            
-   
-
-
-    <script>  
 
         function q3() {
             // 1. Receive the input value of input-q3
             let value3 = $('#input-q3').val();
             // 2. Alert a message if the input value is empty
             if (value3 == " " ) {
-                alert ('Insert any value!');
+                alert ('Insert any name!');
+                return;
             }
-        }
-            // 3. Using the input value, create a list for names-q3 (Remember to use backticks!)
+        
+            // 3. Insert names to appear in list
+            //Using the input value, create a list for names-q3 (Remember to use backticks!)
             // 4. Insert temp_html to names-q3
-            let title = 'A new title!';
-
-let temp_html = ``;
-$('#input-q3').append(temp_html);
+            let temp_html = `<li>${newName}</li>`;
+            // pourquoi ecrire cette forme ${newName}
+            $('#names-q3').append(temp_html);
+        }
 
         function q3_delete() {
-            // 1. Delete all the lists in names-q3
+            // 1. Delete all the lists in names-q3, Creating a button to delete all
+            
+            $( "names-q3" ).empty();
+            
         }
 
     </script>
